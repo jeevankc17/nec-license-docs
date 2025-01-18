@@ -1,12 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/docs",
-        "destination": "/docs"
-      },
-      {
-        "source": "/docs/:path*",
-        "destination": "/docs/:path*" 
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/docs/:path*",
+      "destination": "https://nec-license-docs.vercel.app/docs/:path*"
+    }
+  ]
+}
