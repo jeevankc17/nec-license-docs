@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/docs/:path*",
-      "destination": "https://nec-license-docs.vercel.app/docs/:path*"
+      "source": "/",
+      "destination": "https://innovatorshome.vercel.app/"
     }
   ]
 }
