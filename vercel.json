@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/",
-      "destination": "https://innovatorshome-eight.vercel.app/",
-      "permanent": true
+      "destination": "https://nec-license-docs.vercel.app/"
     }
   ]
 }
