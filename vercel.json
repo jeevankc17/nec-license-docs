@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "https://innovatorshome.vercel.app/"
+      "destination": "https://innovatorshome.vercel.app/",
+      "permanent": true
     }
   ]
 }
