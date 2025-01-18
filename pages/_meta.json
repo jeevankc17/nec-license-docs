@@ -1,3 +1,9 @@
 {
-    "docs": "Contents"
+    "index": {
+    "title": "Introduction",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "computer": "Computer"
 }
