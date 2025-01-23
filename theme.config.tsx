@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
         />
       </svg>
       <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
-        Inside Innovators Home
+        Innovators Home
       </span>
     </>
   ),
