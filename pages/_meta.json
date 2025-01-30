@@ -1,9 +1,52 @@
 {
-    "index": {
+  "index": {
     "title": "Introduction",
+    "type": "blog",
     "theme": {
-      "layout": "full"
+      "layout": "raw"
+    },
+    "display": "hidden"
+  },
+  "license": {
+    "title": "License",
+    "type": "menu",
+    "items": {
+      "computer": {
+        "title": "Computer",
+        "href": "/license/computer"
+      },
+      "civil": {
+        "title": "Civil",
+        "href": "/license/civil"
+      }
     }
   },
-  "computer": "Computer"
+  "masters": {
+    "title": "Masters",
+    "type": "menu",
+    "items": {
+      "computer": {
+        "title": "Computer",
+        "href": "/masters/computer"
+      },
+      "civil": {
+        "title": "Civil",
+        "href": "/masters/civil"
+      }
+    }
+  },
+  "loksewa": {
+    "title": "Loksewa",
+    "type": "menu",
+    "items": {
+      "computer": {
+        "title": "Computer",
+        "href": "/loksewa/computer"
+      },
+      "civil": {
+        "title": "Civil",
+        "href": "/loksewa/civil"
+      }
+    }
+  }
 }

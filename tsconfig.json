@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Stepper.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Stepper.tsx", "components/index/index.js"],
   "exclude": ["node_modules"]
 }

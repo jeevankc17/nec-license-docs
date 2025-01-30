@@ -3,6 +3,14 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import Image from "next/image";
 
 const config: DocsThemeConfig = {
+  banner: {
+    key: 'Live Classes',
+    text: (
+      <a href="www.exam.innovatorshome.tech" target="_blank">
+        Live class going on, get early discount!
+      </a>
+    )
+  },
   logo: (
     <>
       <svg width="24" height="24" viewBox="0 0 24 24">
