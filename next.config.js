@@ -1,10 +1,13 @@
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
-  latex: true
+  latex: {
+    strict: false, // Disable LaTeX strict mode to prevent warnings
+  },
 });
 
 module.exports = withNextra({
-  output: 'standalone', // Optimized for Vercel
-  revalidate: 10, // Enable ISR (regenerates pages every 10 seconds)
+  output: 'standalone',
+  revalidate: 60, // Increase ISR interval to reduce rebuild frequency
+  experimental: { largePageDataBytes: 300 * 1000 }, // Allow larger MDX pages
 });
