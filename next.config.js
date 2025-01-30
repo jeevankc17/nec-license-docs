@@ -2,8 +2,9 @@ const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
   latex: {
-    strict: false, // Disable LaTeX strict mode to prevent warnings
-  },
+    renderer: 'mathjax',
+    strict:false,
+  }
 });
 
 module.exports = withNextra({
