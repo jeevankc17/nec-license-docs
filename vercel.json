@@ -2,5 +2,5 @@
     "framework": "nextjs",
     "buildCommand": "pnpm run vercel-build",
     "devCommand": "pnpm run vercel-dev",
-    "outputDirectory": ".next"
-}
+    "outputDirectory": "out"
+  }

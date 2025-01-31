@@ -10,6 +10,9 @@ const withNextra = require('nextra')({
 });
 
 module.exports = withNextra({
+  images: {
+    unoptimized: true,
+  },
   output: 'export',
   reactStrictMode: true,
   experimental: { largePageDataBytes: 300 * 1000 },
