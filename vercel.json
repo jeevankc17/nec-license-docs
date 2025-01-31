@@ -1,6 +1,6 @@
 {
-    "framework": "nextjs",
-    "buildCommand": "pnpm run vercel-build",
-    "devCommand": "pnpm run vercel-dev",
-    "outputDirectory": "out"
-  }
+  "framework": "nextjs",
+  "buildCommand": "NODE_OPTIONS='--max-old-space-size=4096' pnpm run vercel-build",
+  "devCommand": "pnpm run vercel-dev",
+  "outputDirectory": "out"
+}
