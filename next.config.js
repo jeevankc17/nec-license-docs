@@ -10,7 +10,7 @@ const withNextra = require('nextra')({
 });
 
 module.exports = withNextra({
-  output: 'standalone',
+  output: 'export',
   reactStrictMode: true,
   experimental: { largePageDataBytes: 300 * 1000 },
   async generateStaticParams() {
