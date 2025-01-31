@@ -3,12 +3,30 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
   latex: {
     renderer: 'mathjax',
-    strict:false,
-  }
+    strict: false,
+  },
+  unstable_flexsearch: false, // Disable search indexing
+  staticImage: false, // Prevent image optimizations
 });
 
 module.exports = withNextra({
   output: 'standalone',
-  revalidate: 60, // Increase ISR interval to reduce rebuild frequency
-  experimental: { largePageDataBytes: 300 * 1000 }, // Allow larger MDX pages
+  reactStrictMode: true,
+  experimental: { largePageDataBytes: 300 * 1000 },
+  async generateStaticParams() {
+    return []; // Stops Next.js from pre-generating all MDX files
+  },
+  headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable", // Cache for a long time
+          },
+        ],
+      },
+    ];
+  },
 });
